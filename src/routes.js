@@ -1,14 +1,16 @@
-import { createRouter, createWebHistory } from 'vue-router';
-const routerHistory = createWebHistory();
+import { createRouter, createWebHashHistory } from 'vue-router';
+const routerHistory = createWebHashHistory();
 import HomePage from '@/views/Home.vue';
 import WeatherPage from '@/views/Weather.vue';
 import ErorrPage from '@/views/Erorr.vue';
+
+
 const routers = createRouter({
   history: routerHistory,
   linkActiveClass: "active",
   routes: [
     {
-      path: '/home',
+      path: '/',
       component: HomePage,
     },
     {
