@@ -1,6 +1,6 @@
 <template>
   <HeaderVue />
-  <router-view class="pages"/>
+  <router-view class="pages" />
   <FooterVue />
 </template>
 
